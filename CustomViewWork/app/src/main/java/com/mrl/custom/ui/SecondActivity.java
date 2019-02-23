@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 
 import com.mrl.custom.R;
 import com.mrl.custom.view.RoundView;
@@ -45,6 +46,7 @@ public class SecondActivity extends Activity {
 
         initWaveView();
 
+        Log.e("SeondActivity:","develop"        );
     }
 
     private void initWaveView(){
