@@ -52,10 +52,10 @@ public class RoundView extends View {
     public RoundView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mContext = context;
-        initAttr(context, attrs, defStyleAttr);
+        init(context, attrs, defStyleAttr);
     }
 
-    private void initAttr(Context context, AttributeSet attrs, int defStyleAttr) {
+    private void init(Context context, AttributeSet attrs, int defStyleAttr) {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.RoundView);
         if (a != null) {
 
@@ -76,6 +76,8 @@ public class RoundView extends View {
             a.recycle();
         }
 
+        initPaint();
+
     }
 
     @Override
@@ -87,7 +89,6 @@ public class RoundView extends View {
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         setWidthHeight(widthMeasureSpec, heightMeasureSpec);
-        initMeasure();
     }
 
     /**
@@ -143,7 +144,7 @@ public class RoundView extends View {
         invalidate();
     }
 
-    private void initMeasure() {
+    private void initPaint() {
 
         //圆形
         mCirclePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -201,7 +202,6 @@ public class RoundView extends View {
 
         //画矩形
         canvas.drawArc(mRectF, -90, mEndAngle, false, mArcPaint);
-
 
         //画数字
         canvas.drawText(
