@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.mrl.custom.view.RoundView
+        android:id="@+id/roundView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:roundViewDefaultColor="@color/grey"
+        app:roundViewRadius="50dp"
+        app:roundViewStrokeWidth="5dp"
+        app:roundViewText="7%"
+        app:roundViewPercent="0.1"
+        app:roundViewTextNumSize="24sp"
+        app:roundViewTextPercentSize="12sp"
+        app:roundViewArcColor="@color/orange"
+        android:visibility="gone"
+        />
+
+    <com.mrl.custom.view.WaveView
+        android:id="@+id/waveView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:circleBackgroundColor="@color/orange"
+        app:circleRadius="50dp"
+        app:circleColor="@color/black"
+        app:waveColor="@color/colorAccent"
+        app:percentTextColor="@color/red"
+        app:percentTextSize="18sp"
+        />
+
+</RelativeLayout>
