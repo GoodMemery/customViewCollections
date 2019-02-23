@@ -12,14 +12,4 @@
         <attr name="roundViewPercent" format="float"/>
     </declare-styleable>
 
-    <declare-styleable name="WaveView">
-        <attr name="circleRadius" format="dimension"/>
-        <attr name="circleBackgroundColor" format="color"/>
-        <attr name="circleColor" format="color"/>
-        <attr name="waveColor" format="color"/>
-        <attr name="percentTextSize" format="dimension"/>
-        <attr name="percentTextColor" format="color"/>
-
-    </declare-styleable>
-
 </resources>

@@ -3,9 +3,8 @@ package com.mrl.custom.ui;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.util.Log;
 
-import com.mrl.custom.util.CountTimerUtils;
+import com.mrl.custom.R;
 import com.mrl.custom.view.SingleWaveView;
 
 /**
@@ -14,29 +13,32 @@ import com.mrl.custom.view.SingleWaveView;
  * @author 李立
  * @date 2019/2/21
  */
-public class ThirdSingleWaveActivity extends Activity {
+public class WaveViewActivity extends Activity {
 
+    private CountDownTimer mTimer;
+
+    //水位高度
     private int mDepth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        final SingleWaveView view = new SingleWaveView(this);
-        setContentView(view);
+        setContentView(R.layout.activity_waveview);
 
-        CountDownTimer mTimer = new CountDownTimer( 100000000, 100) {
+        final SingleWaveView waveView = findViewById(R.id.waveView);
+
+        mTimer = new CountDownTimer( 100000000, 100) {
             @Override
             public void onTick(long millisUntilFinished) {
-                mDepth = mDepth + 1;
-                view.setDepth(mDepth);
-
-                Log.e("SingleWaveView的depth2:",mDepth + "");
-
+                //更新水位高度
+                mDepth = mDepth + 4;
+                waveView.setDepth(mDepth);
             }
 
             @Override
             public void onFinish() {
-
+                mTimer.cancel();
             }
         };
 

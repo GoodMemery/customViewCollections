@@ -4,8 +4,10 @@ import android.os.CountDownTimer;
 import android.view.View;
 
 /**
- * lili
  * 时间延时工具
+ *
+ * @author 李立
+ * @date 2019/2/23
  */
 public class CountTimerUtils {
 
@@ -41,7 +43,7 @@ public class CountTimerUtils {
      * 延时几秒处理
      */
     public void countTimerDelay(long delayMills, final CountDelayListener listener) {
-        mTimer = new CountDownTimer( delayMills, 100) {
+        mTimer = new CountDownTimer(delayMills, 100) {
             @Override
             public void onTick(long millisUntilFinished) {
             }

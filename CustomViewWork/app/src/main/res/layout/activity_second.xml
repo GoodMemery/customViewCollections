@@ -17,19 +17,8 @@
         app:roundViewTextNumSize="24sp"
         app:roundViewTextPercentSize="12sp"
         app:roundViewArcColor="@color/orange"
-        android:visibility="gone"
+        android:visibility="visible"
         />
 
-    <com.mrl.custom.view.WaveView
-        android:id="@+id/waveView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:circleBackgroundColor="@color/orange"
-        app:circleRadius="50dp"
-        app:circleColor="@color/black"
-        app:waveColor="@color/colorAccent"
-        app:percentTextColor="@color/red"
-        app:percentTextSize="18sp"
-        />
 
 </RelativeLayout>

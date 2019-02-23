@@ -18,9 +18,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.SecondActivity"/>
+        <activity android:name=".ui.RoundViewActivity"/>
 
-        <activity android:name=".ui.ThirdSingleWaveActivity"/>
+        <activity android:name=".ui.WaveViewActivity"/>
 
     </application>
 

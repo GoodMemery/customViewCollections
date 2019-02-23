@@ -12,18 +12,9 @@
         android:layout_height="100dp"
         android:gravity="center"
         android:background="@color/colorAccent"
-        android:text="0.50"
+        android:text="RoundView"
        />
 
-    <TextView
-        android:id="@+id/tvClick2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@color/colorAccent"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="0.13"
-        />
 
     <TextView
         android:id="@+id/tvClick3"
@@ -32,7 +23,7 @@
         android:background="@color/colorAccent"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="简单的波浪线"
+        android:text="波浪(WaveView)"
         />
 
 </LinearLayout>

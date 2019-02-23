@@ -224,8 +224,6 @@ public class RoundView extends View {
                 mCenterY + mTextPercentSize / 2,
                 mTextPercentPaint);
 
-
-
     }
 
     /**

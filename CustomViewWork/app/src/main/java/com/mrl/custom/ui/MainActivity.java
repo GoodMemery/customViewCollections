@@ -17,23 +17,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView tvclick = findViewById(R.id.tvClick);
-        tvclick.setOnClickListener(new View.OnClickListener() {
+        TextView tvClick = findViewById(R.id.tvClick);
+        tvClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-                Intent intent = new Intent(MainActivity.this,SecondActivity.class);
-                intent.putExtra("percent",getRandom());
-                startActivity(intent);
-            }
-        });
-
-        TextView tvClick2 = findViewById(R.id.tvClick2);
-        tvClick2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+                Intent intent = new Intent(MainActivity.this,RoundViewActivity.class);
                 intent.putExtra("percent",getRandom());
                 startActivity(intent);
             }
@@ -43,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         tvClick3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,ThirdSingleWaveActivity.class);
+                Intent intent = new Intent(MainActivity.this,WaveViewActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,9 +1,8 @@
-package com.mrl.custom.util;//package com.jeagine.cloudinstitute.util;
+package com.mrl.custom.util;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.app.Application;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
@@ -16,7 +15,6 @@ import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
-
 
 import com.mrl.custom.application.BaseApplication;
 
