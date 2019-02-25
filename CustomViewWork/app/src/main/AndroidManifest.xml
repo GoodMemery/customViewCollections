@@ -22,6 +22,8 @@
 
         <activity android:name=".ui.WaveViewActivity"/>
 
+        <activity android:name=".ui.QQDragRedDotActivity"/>
+
     </application>
 
 </manifest>

@@ -35,6 +35,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        TextView tvClick4 = findViewById(R.id.tvClick4);
+        tvClick4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,QQDragRedDotActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private float getRandom(){
