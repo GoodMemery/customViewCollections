@@ -11,6 +11,9 @@ import android.view.View;
 
 import com.mrl.custom.R;
 
+/**
+ * 学习地址：https://www.jianshu.com/p/dca0a79b68e0
+ */
 public class RatingBar extends View {
     private Bitmap mStarNormalBitmap, mStarFocusBitmap;
     private int mGradeNumber = 5;

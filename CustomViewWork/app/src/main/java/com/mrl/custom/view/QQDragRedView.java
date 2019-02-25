@@ -29,7 +29,7 @@ import com.mrl.custom.util.LogUtils;
  * 所以在onLayout中初始化tipImage的坐标。
  * 4.在手势抬起来的时候需要设置tipImage的坐标，在onDraw方法中绘制完之后要刷新tipImage的坐标。
  *
- * @author 李立
+ * @author ...
  * @date 2019/2/23
  */
 public class QQDragRedView extends FrameLayout {

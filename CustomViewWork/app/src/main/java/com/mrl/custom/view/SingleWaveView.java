@@ -17,8 +17,8 @@ import android.view.animation.LinearInterpolator;
 
 /**
  * 波浪线
- *
- * @author 李立
+ * 学习地址：https://blog.csdn.net/u013087553/article/details/68490170
+ * @author ...
  * @date 2019/2/21
  */
 public class SingleWaveView extends View {

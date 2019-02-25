@@ -15,7 +15,7 @@ import com.mrl.custom.util.TDevice;
 /**
  * 圆形View
  *
- * @author 李立
+ * @author ...
  * @date 2019/2/16
  */
 public class RoundView extends View {
