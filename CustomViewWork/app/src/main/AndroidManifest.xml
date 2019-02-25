@@ -24,6 +24,8 @@
 
         <activity android:name=".ui.QQDragRedDotActivity"/>
 
+        <activity android:name=".ui.RatingBarActivity"/>
+
     </application>
 
 </manifest>

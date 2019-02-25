@@ -12,6 +12,11 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+    private float getRandom() {
+        Random ran = new Random(System.currentTimeMillis());
+        return ran.nextInt(100);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
         tvClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,RoundViewActivity.class);
-                intent.putExtra("percent",getRandom());
+                Intent intent = new Intent(MainActivity.this, RoundViewActivity.class);
+                intent.putExtra("percent", getRandom());
                 startActivity(intent);
             }
         });
@@ -31,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         tvClick3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,WaveViewActivity.class);
+                Intent intent = new Intent(MainActivity.this, WaveViewActivity.class);
                 startActivity(intent);
             }
         });
@@ -40,14 +45,19 @@ public class MainActivity extends AppCompatActivity {
         tvClick4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,QQDragRedDotActivity.class);
+                Intent intent = new Intent(MainActivity.this, QQDragRedDotActivity.class);
                 startActivity(intent);
             }
         });
-    }
 
-    private float getRandom(){
-        Random ran =new Random(System.currentTimeMillis());
-             return ran.nextInt(100);
+        TextView tvClick5 = findViewById(R.id.tvClick5);
+        tvClick5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RatingBarActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
