@@ -26,4 +26,16 @@
         android:text="波浪(WaveView)"
         />
 
+    <TextView
+        android:id="@+id/tvClick5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="ratingBar"
+        />
+
+
+
 </LinearLayout>

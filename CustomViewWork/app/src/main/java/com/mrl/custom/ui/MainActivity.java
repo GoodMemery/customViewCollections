@@ -35,6 +35,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        TextView tvClick5 = findViewById(R.id.tvClick5);
+        tvClick5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,RatingBarActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private float getRandom(){
