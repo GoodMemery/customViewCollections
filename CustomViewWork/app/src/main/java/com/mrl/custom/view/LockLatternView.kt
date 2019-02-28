@@ -107,7 +107,7 @@ internal class LockPatternView : View {
         if (mSelectPoints.size >= 1) {
             //两个点之间需要绘制一条线
             var lastPoint = mSelectPoints[0]
-            for (index in 1 .. mSelectPoints.size) {
+            for (index in 1..mSelectPoints.size) {
                 //两个点之间绘制一条线
                 drawLine(lastPoint, mSelectPoints[index], canvas, mLinePaint)
                 //两个点之间绘制一个箭头
